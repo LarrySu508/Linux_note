@@ -4,6 +4,6 @@
 ```
 [root@user]# yum update nss curl\
 ```
->>參考於:[git clone 報錯 incompatible or unsupported protocol version處理方法](https://blog.csdn.net/feinifi/article/details/79629904)。
+>參考於:[git clone 報錯 incompatible or unsupported protocol version處理方法](https://blog.csdn.net/feinifi/article/details/79629904)。
 2.
 
