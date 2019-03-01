@@ -1,2 +1,2 @@
-# Linux_note
-Linux自動化運維筆記
+# 第一周
+## CentOS 7 SSH 連線驗證(Google Authenticator)
