@@ -53,3 +53,6 @@ ChallengeResponseAuthentication yes
 [root@user/Desktop/google-authenticator-libpam-master]# systemctl restart sshd
 ```
 ### 6.執行google-authenticator後會出現QRcode，然後在手機下載google-authenticator，手機開啟google-authenticator後，會請你掃碼或輸入金鑰，之後你在遠端登入用SSH協定時，必須再輸入手機二次驗證碼，還有個重點是在QRcode下方有五行數字，那五個字串是你無法正常驗證時，用來當萬能鑰匙的。
+```
+[root@user/Desktop/google-authenticator-libpam-master]# google-authenticator
+```
