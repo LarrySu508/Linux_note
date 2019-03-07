@@ -84,8 +84,8 @@ systemctl start named
 ```
 nslookup www.nqu.edu.tw [NDS Server IP]
 ```
-#### 下指令前先pin虛擬機的ip看可否連線。
+#### 下指令前先ping虛擬機的IP看可否連線。
 #### 結果會有虛擬機IP和查詢Domain Name的IP，如下圖:
-![image]()
+![image](https://github.com/LarrySu508/Linux_note/blob/master/Week2/DN.png)
 
 
