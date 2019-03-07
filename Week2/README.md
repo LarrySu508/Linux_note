@@ -87,5 +87,4 @@ nslookup www.nqu.edu.tw [NDS Server IP]
 #### 下指令前先ping虛擬機的IP看可否連線。
 #### 結果會有虛擬機IP和查詢Domain Name的IP，如下圖:
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week2/DN.jpg)
-
-
+#### 有一個地方觀念很重要，有看到"未經授權的回答:"這幾個字的話，代表DNS Server內部就有快取到，不用再去找，如果沒快取，就沒"未經授權的回答:"這幾個字。
