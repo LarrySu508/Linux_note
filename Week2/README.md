@@ -22,6 +22,70 @@
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week2/DDoS.png)
 #### 最後User會被大量流量攻擊到無法連網。
 ## 4.完全網域域名(Fully qualified domain name,FQDN):
-#### 維基百科概念圖
+#### 維基百科概念圖:
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week2/350px-DNS-names-ru.svg.png)
 #### 現在Browser都知道怎麼找Domain Name，網址最後的"."可以不用打，所以在Browser上打`https://www.google.com.tw.`或`https://www.google.com.tw`，結果都一樣不信可以試試。
+## 5.架設DNS Server(請在root模式下執行)
+### 1.安裝BIND(Berkeley Internet Name Domain)。
+```
+yum -y install bind bind-chroot bind-utils
+```
+### 2.設定或關閉防火牆，SELinux關閉。
+#### 設定防火牆。
+```
+firewall-cmd --permanent --add-service=dns
+firewall-cmd --reload
+```
+#### 關閉防火牆。
+```
+systemctl stop firewalld.service
+systemctl disable firewalld.service
+```
+#### SELinux關閉。
+修改/etc/selinux/config檔，改成disable。
+```
+gedit /etc/selinux/config
+SELINUX=disable
+```
+### 3.啟動named服務，測試DNS Server。
+```
+systemctl start named
+systemctl enable named
+```
+#### 測試DNS Server。
+```
+dig @127.0.0.1 www.pchome.com.tw
+```
+#### 結果會有一行;; ANSWER SECTION，下一行是你查詢的Domain Name的ip。
+### 4.開放給外部連線查詢。
+#### 編輯bind的主設定檔。
+```
+gedit /etc/named.conf
+```
+#### 把"listen-on port 53"與"allow-query"的127.0.0.1與localhost都改成"any"。
+```
+// named.conf
+//
+(略)
+option  {
+        listen-on port 53 { any; };
+        (略)
+        allow-query   { any; };
+        (略)
+};
+(略)
+```
+#### 改完存檔後，重啟named服務。
+```
+systemctl start named
+```
+### 5.最後在自己的主機，而非虛擬機上(虛擬機別關啊，他是你要用的Server)，下查詢Domain Name指令。
+#### 打開主機的Terminal輸入:([NDS Server IP]請輸入你虛擬機的IP，因為那是你開的NDS Server，還有網頁你可隨便挑一個找不一定要照範例輸入。)
+```
+nslookup www.nqu.edu.tw [NDS Server IP]
+```
+#### 下指令前先pin虛擬機的ip看可否連線。
+#### 結果會有虛擬機IP和查詢Domain Name的IP，如下圖:
+![image]()
+
+
