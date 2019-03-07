@@ -21,3 +21,6 @@
 ### 4.DNS也可用來做DDoS，概念如下圖:
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week2/DDoS.png)
 #### 最後User會被大量流量攻擊到無法連網。
+## 4.完全網域域名(Fully qualified domain name,FQDN):
+#### 維基百科概念圖
+![image]()
