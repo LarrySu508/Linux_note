@@ -86,6 +86,6 @@ nslookup www.nqu.edu.tw [NDS Server IP]
 ```
 #### 下指令前先ping虛擬機的IP看可否連線。
 #### 結果會有虛擬機IP和查詢Domain Name的IP，如下圖:
-![image](https://github.com/LarrySu508/Linux_note/blob/master/Week2/DN.png)
+![image](https://github.com/LarrySu508/Linux_note/blob/master/Week2/DN.jpg)
 
 
