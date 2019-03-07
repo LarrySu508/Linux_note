@@ -82,7 +82,7 @@ systemctl start named
 ### 5.最後在自己的主機，而非虛擬機上(虛擬機別關啊，他是你要用的Server)，下查詢Domain Name指令。
 #### 打開主機的Terminal輸入:([NDS Server IP]請輸入你虛擬機的IP，因為那是你開的NDS Server，還有網頁你可隨便挑一個找不一定要照範例輸入。)
 ```
-nslookup www.nqu.edu.tw [NDS Server IP]
+nslookup www.google.com [NDS Server IP]
 ```
 #### 下指令前先ping虛擬機的IP看可否連線。
 #### 結果會有虛擬機IP和查詢Domain Name的IP，如下圖:
