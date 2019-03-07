@@ -23,4 +23,5 @@
 #### 最後User會被大量流量攻擊到無法連網。
 ## 4.完全網域域名(Fully qualified domain name,FQDN):
 #### 維基百科概念圖
-![image]()
+![image](https://github.com/LarrySu508/Linux_note/blob/master/Week2/350px-DNS-names-ru.svg.png)
+#### 現在Browser都知道怎麼找Domain Name，網址最後的"."可以不用打，所以在Browser上打`https://www.google.com.tw.`或`https://www.google.com.tw`，結果都一樣不信可以試試。
