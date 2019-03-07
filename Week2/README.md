@@ -20,4 +20,4 @@
 ### 3.谷歌 Google Public DNS Server 8.8.8.8 (主) 8.8.4.4 (副)，IBM 免費 DNS Server 9.9.9.9，Cloudflare與亞太網路資訊中心（Asia-Pacific Network Information Centre，APNIC）合作的公共DNS Server 1.1.1.1。
 ### 4.DNS也可用來做DDoS，概念如下圖:
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week2/DDoS.png)
->最後User會被大量流量攻擊到無法連網。
+#### 最後User會被大量流量攻擊到無法連網。
