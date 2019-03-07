@@ -9,3 +9,10 @@
 |[b1-b2]              |配對b1-b2中的任意單個字符。|下a[0-2]b會出現單個字符類似的檔案，如a0b,a1b,a2b。|
 |[!b1-b2]or[^b1-b2]   |配對不在b1-b2中的任意單個字符。|下a[!0-2]b不會出現單個字符類似的檔案，如a3b,aib,a^b。|
 |{string1,string2,…}  |配對string1,string2或string…中的符合的字符串。|下a{123,2gsd32%@ks4@,%?,fij}b會出現符合字符串類似的檔案，如a123b,a2gsd32%@ks4@b,a%?b,afijb。|
+## 2.DNS
+### 1.DNS Server:直接去詢問Domain Name的IP，再回傳給詢問者，也快取作用。
+### 2.DNS Cache:顧名思義是把查到的Domain Name—IP存起來，如果有人問到一樣的Domain Name直接傳給詢問者，可減低DNS Server負擔。
+### 3.DNS Forworder:代理從別人的DNS Server或DNS Cache抓取過來給詢問者，可減低DNS Server負擔。
+>其他類型可參考:[DNS架構](http://dns-learning.twnic.net.tw/dns/02ArchDNS.html)。
+## 3.DNS Server
+### 1.做為名稱解拆，早期有做負載均衡作用
