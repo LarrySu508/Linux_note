@@ -10,5 +10,18 @@
 ### 1.正向查詢
 #### 1.先設定/etc/named.rfc1912.zones，在/etc/named.rfc1912.zones網域設定檔中新增一個zone區塊，如下圖：
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week3/%E6%AD%A3%E5%90%91%E8%A8%AD%E5%AE%9A1.png)
-新增一個"newtest.com"網域設定值，而網域資源記錄檔是"named.newtest"。
-#### 2.在/var/named資料夾中新增一個網域資源記錄檔"named.newtest"。
+新增一個"newtest.com"網域設定值，而網域資源記錄檔是"named.newtest"，這兩個的"newtest"可以自由命名，只是要和後面步驟要有一致性。
+#### 2.在/var/named資料夾中新增一個網域資源記錄檔"named.newtest"，內容如下圖：
+![image](https://github.com/LarrySu508/Linux_note/blob/master/Week3/%E6%AD%A3%E5%90%912.png)
+圖中紅框部分改成你個人設定的IP，格式其實可參照同資料夾下的"named.localhost"檔案。
+#### 3.在重啟named service後，最後在cmd下可以用正向查詢找到自己設定的格式，如下圖：
+##### 1.
+```
+systemctl restart named
+```
+##### 2.
+![image](https://github.com/LarrySu508/Linux_note/blob/master/Week3/%E7%B5%90%E6%9E%9C1.png)
+>如果有權限問題請在restart named前下下方指令，更改資源紀錄檔的權限。
+```
+chown root:named /var/named/named.newtest
+```
