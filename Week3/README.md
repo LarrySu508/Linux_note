@@ -44,7 +44,7 @@ systemctl restart named
 chown root:named /var/named/named.newtest.ip
 ```
 ## 3.Docker
-### 1.Docker是一個容器管理軟體，他是一個推疊概念的容器，比如說你在CentOS下藥中Apache,MySQL,PHP，他會先有一層基底Docker，再來是CentOS疊在上面，再來是Apache，再來是MySQL，再來是PHP，這樣就疊出四個容器了。而他封裝後會變成Image，執行後才會變成容器。
+### 1.Docker是一個容器管理軟體，他是一個推疊概念的容器，比如說你在CentOS下要裝Apache,MySQL,PHP，他會先有一層基底Docker，再來是CentOS疊在上面，再來是Apache，再來是MySQL，再來是PHP，這樣就疊出四個容器了。而他封裝後會變成Image，執行後才會變成容器。
 ### 2.Docker建置
 ### 1.先更新你的機子
 ```
@@ -65,7 +65,7 @@ docker pull centos:latest
 docker run -it docker.io/centos:latest
 ```
 成功啟動的會@後面會出現亂數，如下圖：
-![image](https://github.com/LarrySu508/Linux_note/blob/master/Week3/rundocker.png)
+>![image](https://github.com/LarrySu508/Linux_note/blob/master/Week3/rundocker.png)
 ### 5.其他指令
 ```
 docker images   //你本機中有的Image列出
