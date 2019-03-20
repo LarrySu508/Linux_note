@@ -45,5 +45,7 @@
 ![image]()
 ### 4.於Docker中顯示IP
 #### 若有兩台Docker，請先在兩台上下載net-tools
-> yum -y net-tools
+```
+yum -y net-tools
+```
 ![image]()
