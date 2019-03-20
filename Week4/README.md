@@ -32,5 +32,18 @@
 #### 8.抓取非任何字類字符例子：
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week4/8.png)
 #### 9.抓取需單字分隔的字符例子：
+##### 1.
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week4/9.png)
+##### 2.
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week4/10.png)
+## 2.Docker 
+### 1.設定Docker名稱
+![image]()
+### 2.用Docker名稱或ID開啟
+![image]()
+### 3.關閉開啟的Docker
+![image]()
+### 4.於Docker中顯示IP
+#### 若有兩台Docker，請先在兩台上下載net-tools
+> yum -y net-tools
+![image]()
