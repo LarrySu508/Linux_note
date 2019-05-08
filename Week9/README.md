@@ -25,8 +25,7 @@
 ## 8. 再來是監控架設虛擬機的windows系統，先把/etc/nagios/nagios.cfg設定檔裡windows系統的設定註解去掉，意思就是開啟windows系統的監控，接著是設定與windows系統建置連線，systemctl restart nagios，重啟nagios。
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week9/n.png)
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week9/o.png)
-## 9. 接著在windows上下載NSClient++，最後開啟nagios網頁就會有winserver的狀態。
-[Nagios利用NSClient++監控Windows主機](https://www.itread01.com/content/1505803218.html)
+## 9. 接著在windows上下載NSClient++，最後開啟nagios網頁就會有winserver的狀態。[Nagios利用NSClient++監控Windows主機](https://www.itread01.com/content/1505803218.html)
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week9/p.png)
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week9/q.png)
 ![image](https://github.com/LarrySu508/Linux_note/blob/master/Week9/r.png)
