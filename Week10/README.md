@@ -22,12 +22,13 @@ chmod 600 /etc/rsyncd.pass
 ```
 systemctl start rsyncd.service
 ```
-## 7. 在存放備份的機子上，建認證密碼文件，建完更改權限。
+## 7. 在存放備份的機子上，建認證密碼文件，建完更改權限，啟動服務。
 ```
 gedit /etc/rsyncd.pass
 123456 //使用者帳密
 
 chmod 600 /etc/rsyncd.pass
+systemctl start rsyncd.service
 ```
 ## 8. 在存放備份的機子上，下以下指令，即可手動備份。
 ```
